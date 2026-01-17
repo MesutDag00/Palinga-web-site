@@ -7,10 +7,14 @@ export function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-trust-blue text-white font-bold shadow-soft-sm">
-                P
-              </div>
+            <div className="flex flex-row items-center">
+              <span className="mr-3 inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10">
+                <img
+                  src="/images/palinga-logo.jpeg"
+                  alt="PALINGA Yazılım Logo"
+                  className="h-8 w-auto object-contain"
+                />
+              </span>
               <div className="text-lg font-bold tracking-tight">PALINGA Yazılım A.Ş.</div>
             </div>
             <p className="text-[15px] leading-relaxed text-gray-400">

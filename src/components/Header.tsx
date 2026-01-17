@@ -19,9 +19,11 @@ export function Header() {
       </a>
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-ink-black">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-trust-blue text-white">
-            AR
-          </span>
+          <img
+            src="/images/AphasiaReverbisLogo.jpeg"
+            alt="Aphasia Reverbis Logo"
+            className="mr-4 h-10 w-auto object-contain sm:h-12"
+          />
           <span className="hidden sm:block">Aphasia Reverbis</span>
           <span className="sm:hidden">AR</span>
         </Link>

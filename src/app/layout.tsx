@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Aphasia Reverbis | Terapist KontrollÃ¼ Dijital Rehabilitasyon",
   description:
     "TÃ¼rkiyeâ€™nin ilk terapist kontrollÃ¼ afazi rehabilitasyon platformu. TÃœBÄ°TAK 1812 destekli veri odaklÄ± Ã§Ã¶zÃ¼m.",
+  icons: {
+    icon: [{ url: "/images/AphasiaReverbisico.ico", type: "image/x-icon" }],
+    apple: [{ url: "/images/AphasiaReverbisico.ico", type: "image/x-icon" }],
+  },
   openGraph: {
     title: "Aphasia Reverbis | Terapist KontrollÃ¼ Dijital Rehabilitasyon",
     description:
