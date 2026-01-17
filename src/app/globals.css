@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-trust-blue: #0052cc;
+  --color-healing-teal: #00a3bf;
+  --color-clean-white: #f4f5f7;
+  --color-ink-black: #0b1220;
+  --color-soft-gray: #6b7280;
+  --color-soft-line: #e5e7eb;
+  --color-soft-surface: #ffffff;
+  --shadow-soft-sm: 0 6px 18px rgba(11, 18, 32, 0.08);
+  --shadow-soft: 0 10px 28px rgba(11, 18, 32, 0.1);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Readability: +1-2px overall */
+    @apply bg-clean-white text-ink-black font-sans antialiased text-[17px];
+  }
+
+  :focus-visible {
+    outline: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply ring-4 ring-trust-blue/20 ring-offset-2 ring-offset-clean-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .card {
+    /* 16px radius + softer shadow */
+    @apply rounded-2xl bg-white shadow-soft-sm ring-1 ring-soft-line transition duration-200 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-0.5 hover:shadow-soft;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-sm font-semibold text-ink-black ring-1 ring-soft-line;
+  }
+
+  .glass {
+    @apply rounded-2xl bg-white/55 ring-1 ring-white/50 shadow-soft-sm backdrop-blur-md;
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 520ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up {
+      animation: none;
+    }
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
