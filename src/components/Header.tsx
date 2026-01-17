@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 
 const nav = [
   { href: "/", label: "Ana Sayfa" },
-  { href: "/solution", label: "Çözüm" },
+  { href: "/solution", label: "Platform" },
   { href: "/about", label: "Hakkımızda" },
   { href: "/contact", label: "İletişim" },
 ];

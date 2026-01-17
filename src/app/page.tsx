@@ -296,56 +296,53 @@ export default function Home() {
             </div>
           </div>
 
-          <section aria-label="Başarı Hikayesi" className="mt-10 sm:mt-12">
-            <div className="rounded-3xl bg-slate-50 p-8 sm:p-10 lg:p-12">
-              <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-                <div className="mx-auto max-w-2xl text-center lg:text-left">
-                  <div className="space-y-4">
-                    <div className="text-3xl font-bold text-trust-blue">IDEATHON 2025</div>
-                    <p className="text-xl leading-relaxed text-slate-800 text-pretty">
+          <section aria-label="Başarılarımız" className="mt-10 sm:mt-12">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <article className="h-full w-full rounded-3xl border border-slate-50 bg-white p-8 font-sans shadow-md">
+                <div className="flex h-full flex-col">
+                  <figure className="overflow-hidden rounded-2xl bg-white ring-1 ring-soft-line">
+                    <Image
+                      src="/images/IDEATHON-Main.jpg"
+                      alt="IDEATHON 2025"
+                      width={1600}
+                      height={1200}
+                      sizes="(max-width: 1024px) 100vw, 560px"
+                      className="h-auto w-full"
+                      priority
+                    />
+                  </figure>
+
+                  <div className="mt-6 text-left">
+                    <div className="text-2xl font-extrabold text-slate-900">IDEATHON 2025</div>
+                    <p className="mt-4 text-base leading-relaxed text-slate-600">
                       Şubat 2025 itibarıyla aynı akademik disiplinden gelen beş ortaklı bir yapı kurarak afazi rehabilitasyonuna yönelik teknolojik çözümümüzün ilk adımlarını attık ve Haziran ayına kadar devam eden AR-GE çalışmalarıyla uygulamanın temellerini oluşturduk. Üniversitemiz bünyesindeki ilk değerlendirmede 100 üzerinden 92 puan alarak teknik yeterliliğimizi kanıtladıktan sonra, final aşamasında vizyonumuzu jüri heyetine sunup 80 puanla genel klasman birincisi seçilerek yetkililer tarafından TÜBİTAK BİGG 1812 programı için stratejik tavsiye aldık. Elde ettiğimiz bu akademik onayı ve stratejik tavsiyeleri yasal bir güvence altına almak amacıyla da kazandığımız ilk ödülü doğrudan Fikri Patent Başvurusu süreçlerinde değerlendirerek PALINGA Yazılım A.Ş. vizyonunu somutlaştırdık.
                     </p>
                   </div>
                 </div>
-                <figure className="mx-auto w-full max-w-2xl overflow-hidden rounded-xl bg-white ring-1 ring-soft-line">
-                  <Image
-                    src="/images/IDEATHON-Main.jpg"
-                    alt="IDEATHON 2025"
-                    width={1600}
-                    height={1200}
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="h-auto w-full"
-                    priority
-                  />
-                </figure>
-              </div>
-            </div>
-          </section>
+              </article>
 
-          <section aria-label="Success Story" className="mt-6 sm:mt-8">
-            <div className="rounded-3xl bg-slate-50 p-8 sm:p-10 lg:p-12">
-              <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-                <figure className="mx-auto w-full max-w-2xl overflow-hidden rounded-xl">
-                  <div className="relative aspect-[4/3] w-full">
-                    <Image
-                      src="/images/Beginer.jpeg"
-                      alt="TÜBİTAK BİGG 1812 & Kuruluş"
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      className="object-contain"
-                    />
-                  </div>
-                </figure>
+              <article className="h-full w-full rounded-3xl border border-slate-50 bg-white p-8 font-sans shadow-md">
+                <div className="flex h-full flex-col">
+                  <figure className="overflow-hidden rounded-2xl bg-white ring-1 ring-soft-line">
+                    <div className="relative aspect-[4/3] w-full">
+                      <Image
+                        src="/images/Beginer.jpeg"
+                        alt="TÜBİTAK BİGG 1812 & Kuruluş"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 560px"
+                        className="object-contain"
+                      />
+                    </div>
+                  </figure>
 
-                <div className="mx-auto max-w-2xl text-center lg:text-left">
-                  <div className="space-y-4">
-                    <div className="text-3xl font-bold text-trust-blue">TÜBİTAK BİGG 1812 &amp; KURULUŞ</div>
-                    <p className="text-xl leading-relaxed text-slate-800 text-pretty">
+                  <div className="mt-6 text-left">
+                    <div className="text-2xl font-extrabold text-slate-900">TÜBİTAK BİGG 1812 &amp; KURULUŞ</div>
+                    <p className="mt-4 text-base leading-relaxed text-slate-600">
                       Ideathon başarısının ardından projemizi ulusal ölçeğe taşımak adına başvurduğumuz TÜBİTAK BİGG 1812 programında, ilk etabı başarıyla geçerek ikinci aşamaya kalmaya hak kazandık. Beş ay süren bu yoğun maratonda, detaylı teknik dosya hazırlıkları ve jüri sunumlarının ardından 1,5 aylık kritik değerlendirme sürecini Mükemmeliyet Mührü alarak taçlandırdık. Türkiye genelinde desteklenmeye değer görülen 107 seçkin projeden biri olarak, aldığımız yatırımla 09.01.2026 tarihinde şirketimizi resmen kurduk ve teknolojimizi profesyonel bir kimliğe kavuşturduk.
                     </p>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </section>
 

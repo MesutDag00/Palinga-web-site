@@ -459,7 +459,7 @@ export default function SolutionPage() {
                 Aphasia Reverbis Teknolojisini Kurumunuzda Deneyimleyin
               </div>
               <p className="max-w-2xl text-[15px] font-medium leading-relaxed text-white/80">
-                Rehabilitasyon süreçlerinizi dijitalleştirmek ve çözüm ortağımız olmak için demo sürümü talep edebilirsiniz.
+                Rehabilitasyon süreçlerinizi dijitalleştirmek ve platform ortağımız olmak için demo sürümü talep edebilirsiniz.
               </p>
               <ButtonLink
                 href="#demo-talep"

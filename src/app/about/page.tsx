@@ -1,5 +1,5 @@
 import { Container } from "@/components/Container";
-import { Icon, HomeIcon } from "@/components/Icons";
+import { Icon, HomeIcon, MapPinIcon } from "@/components/Icons";
 import Image from "next/image";
 
 type TeamMember = {
@@ -173,37 +173,36 @@ export default function AboutPage() {
         </section>
 
         <section aria-labelledby="office" className="mt-12">
-          <div className="card card-hover p-6">
-            <div className="flex items-start gap-4">
+          <div className="mx-auto max-w-3xl">
+            <div className="flex flex-col items-center text-center">
               <Icon title="Konum ve ofis">
                 <HomeIcon />
               </Icon>
-              <div className="space-y-2">
-                <h2 id="office" className="text-2xl font-bold text-ink-black">
-                  Konum ve Ofis
-                </h2>
-                <p className="text-base text-soft-gray">
-                  Fark Labs TEKMER bünyesinde, Sarıyer’de faaliyet gösteriyoruz. Klinik iş birlikleri ve pilot çalışmalar için iletişime geçebilirsiniz.
-                </p>
-                <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-clean-white p-4 ring-1 ring-soft-line">
-                    <div className="text-sm font-semibold text-soft-gray">Logo Alanı</div>
-                    <div className="mt-2 flex h-16 items-center justify-center rounded-xl bg-white ring-1 ring-soft-line">
-                      <span className="text-sm font-bold text-ink-black">Fark Labs TEKMER</span>
-                    </div>
-                  </div>
-                  <div className="rounded-2xl bg-clean-white p-4 ring-1 ring-soft-line">
-                    <div className="text-sm font-semibold text-soft-gray">Adres</div>
-                    <div className="mt-1 text-base font-bold text-ink-black">Sarıyer / İstanbul</div>
-                    <a
-                      className="mt-3 inline-flex w-full items-center justify-center rounded-2xl bg-white px-4 py-3 text-base font-semibold text-trust-blue ring-1 ring-soft-line transition hover:bg-clean-white hover:scale-[1.02] active:scale-[0.99]"
-                      href="https://www.google.com/maps/search/?api=1&query=Fark%20Labs%20TEKMER%20Sar%C4%B1yer%20%C4%B0stanbul"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Google Maps’te Aç
-                    </a>
-                  </div>
+              <h2 id="office" className="mt-4 text-2xl font-bold text-ink-black">
+                Konum ve Ofis
+              </h2>
+              <p className="mt-2 text-base text-soft-gray">
+                Fark Labs TEKMER bünyesinde, Sarıyer’de faaliyet gösteriyoruz. Klinik iş birlikleri ve pilot çalışmalar için iletişime geçebilirsiniz.
+              </p>
+            </div>
+
+            <div className="mt-6 flex flex-col items-center border border-slate-100 bg-white text-center shadow-2xl rounded-3xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-full p-12">
+                <img
+                  src="/images/farklabs-logo.png"
+                  alt="Farklabs TEKMER Logo"
+                  className="mx-auto h-auto w-full max-w-[350px] object-contain"
+                />
+              </div>
+
+              <div className="w-full px-10 pb-10">
+                <div className="text-sm font-semibold uppercase tracking-widest text-slate-400">
+                  MERKEZ OFİS &amp; STRATEJİK PARTNER
+                </div>
+                <div className="mt-2 text-2xl font-bold text-slate-800">Farklabs TEKMER</div>
+                <div className="mt-4 flex items-center justify-center gap-2 text-slate-500">
+                  <MapPinIcon />
+                  <span>4. Levent, İstanbul - Teknoloji Geliştirme Bölgesi</span>
                 </div>
               </div>
             </div>

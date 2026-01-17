@@ -15,7 +15,7 @@ export default function FaqPage() {
           {[
             {
               q: "Demo talebi nasıl oluşturabilirim?",
-              a: "Çözüm sayfasının en altındaki “Demo ve Partnerlik Başvurusu” alanından talep bırakabilirsiniz.",
+              a: "Platform sayfasının en altındaki “Demo ve Partnerlik Başvurusu” alanından talep bırakabilirsiniz.",
             },
             {
               q: "Kurumsal pilot çalışma süreci nasıl ilerler?",

@@ -1,22 +1,44 @@
+import Link from "next/link";
 import { Container } from "@/components/Container";
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-clean-white">
+    <div className="bg-white text-slate-800">
       <Container className="py-12 sm:py-16">
-        <div className="max-w-2xl">
-          <h1 className="text-balance text-4xl font-bold text-ink-black sm:text-5xl">
-            Gizlilik Sözleşmesi
-          </h1>
-          <p className="mt-4 text-lg text-soft-gray">
-            Gizlilik ve veri işleme esasları bu sayfada açıklanacaktır.
-          </p>
-        </div>
+        <div className="mx-auto max-w-4xl font-sans">
+          <Link
+            href="/"
+            className="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50"
+          >
+            ← Ana Sayfaya Dön
+          </Link>
 
-        <div className="mt-10 card p-6">
-          <div className="text-base font-bold text-ink-black">Özet</div>
-          <p className="mt-2 text-base text-soft-gray">
-            Bu sayfa şu an placeholder’dır. Nihai sözleşme metninizi paylaştığınızda kurumsal dil ve yapı ile düzenleyebiliriz.
+          <h1 className="mb-8 mt-6 text-4xl font-bold">Gizlilik Politikası</h1>
+
+          <p className="text-base leading-relaxed text-slate-700">
+            PALINGA Yazılım A.Ş. olarak, Aphasia Reverbis kapsamında işlenen kişisel verilerin gizliliğine ve güvenliğine
+            önem veririz. Bu politika; platformu kullanan afazi hastaları, hasta yakınları ve uzman dil‑konuşma
+            terapistleri için temel gizlilik prensiplerimizi açıklar.
+          </p>
+
+          <h2 className="mb-3 mt-6 text-xl font-semibold">Temel ilkeler</h2>
+          <ul className="list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
+            <li>Veriler, yalnızca platformun sunulması ve rehabilitasyon süreçlerinin yürütülmesi amacıyla kullanılır.</li>
+            <li>Veriler, hiçbir şekilde reklam amaçlı üçüncü taraflara satılmaz.</li>
+            <li>Terapist‑hasta gizliliği esastır; yetkisiz erişimi önlemek için erişim kontrolleri uygulanır.</li>
+          </ul>
+
+          <h2 className="mb-3 mt-6 text-xl font-semibold">Paylaşım ve üçüncü taraflar</h2>
+          <p className="text-base leading-relaxed text-slate-700">
+            Hizmetin sunulması için zorunlu durumlarda (örn. barındırma/altyapı hizmetleri), yalnızca gerekli ölçüde ve
+            güvenlik yükümlülükleri altında sınırlı paylaşım yapılabilir. Bu kapsam dışında verileriniz üçüncü taraflarla
+            paylaşılmaz.
+          </p>
+
+          <h2 className="mb-3 mt-6 text-xl font-semibold">Güvenlik</h2>
+          <p className="text-base leading-relaxed text-slate-700">
+            Verilerin güvenliği için teknik ve idari tedbirler uygulanır; erişim yetkileri sınırlandırılır ve uygun
+            güvenlik kontrolleriyle izlenir.
           </p>
         </div>
       </Container>

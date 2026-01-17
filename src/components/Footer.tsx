@@ -14,7 +14,7 @@ export function Footer() {
               <div className="text-lg font-bold tracking-tight">PALINGA Yazılım A.Ş.</div>
             </div>
             <p className="text-[15px] leading-relaxed text-gray-400">
-              Afazi rehabilitasyonunda yapay zeka destekli yenilikçi çözümler.
+              Afazi rehabilitasyonunda teknoloji tabanlı ve erişilebilir dijital çözümler.
             </p>
           </div>
 
@@ -33,11 +33,11 @@ export function Footer() {
               </li>
               <li>
                 <Link className="text-[15px] font-semibold text-gray-400 transition hover:text-trust-blue" href="/solution">
-                  Çözümlerimiz
+                  Platformumuz
                 </Link>
               </li>
               <li>
-                <Link className="text-[15px] font-semibold text-gray-400 transition hover:text-trust-blue" href="/faq">
+                <Link className="text-[15px] font-semibold text-gray-400 transition hover:text-trust-blue" href="/sss">
                   SSS
                 </Link>
               </li>

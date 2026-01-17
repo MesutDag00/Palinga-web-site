@@ -1,22 +1,35 @@
+import Link from "next/link";
 import { Container } from "@/components/Container";
 
 export default function CookiePolicyPage() {
   return (
-    <div className="bg-clean-white">
+    <div className="bg-white text-slate-800">
       <Container className="py-12 sm:py-16">
-        <div className="max-w-2xl">
-          <h1 className="text-balance text-4xl font-bold text-ink-black sm:text-5xl">
-            Çerez Politikası
-          </h1>
-          <p className="mt-4 text-lg text-soft-gray">
-            Çerezlerin kullanım amacı ve yönetimi bu sayfada açıklanacaktır.
-          </p>
-        </div>
+        <div className="mx-auto max-w-4xl font-sans">
+          <Link
+            href="/"
+            className="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50"
+          >
+            ← Ana Sayfaya Dön
+          </Link>
 
-        <div className="mt-10 card p-6">
-          <div className="text-base font-bold text-ink-black">Bilgilendirme</div>
-          <p className="mt-2 text-base text-soft-gray">
-            Bu sayfa şu an placeholder’dır. Çerez yönetimi (onay/ret) altyapısı eklemek isterseniz ayrıca entegre edebiliriz.
+          <h1 className="mb-8 mt-6 text-4xl font-bold">Çerez Politikası</h1>
+
+          <p className="text-base leading-relaxed text-slate-700">
+            Aphasia Reverbis web sitesinde, kullanıcı deneyimini iyileştirmek ve sitenin doğru şekilde çalışmasını sağlamak
+            amacıyla yalnızca performans ve kullanıcı deneyimi için gerekli teknik çerezler kullanılabilir.
+          </p>
+
+          <h2 className="mb-3 mt-6 text-xl font-semibold">Çerezler neden kullanılır?</h2>
+          <p className="text-base leading-relaxed text-slate-700">
+            Teknik çerezler; sayfa geçişlerinin doğru çalışması, temel güvenlik kontrolleri ve performans iyileştirmeleri
+            gibi işlevler için kullanılabilir. Bu çerezler, platformun sağlıklı çalışması açısından gereklidir.
+          </p>
+
+          <h2 className="mb-3 mt-6 text-xl font-semibold">Çerez yönetimi</h2>
+          <p className="text-base leading-relaxed text-slate-700">
+            Tarayıcı ayarlarınız üzerinden çerezleri kontrol edebilir veya silebilirsiniz. Çerezleri devre dışı bırakmanız,
+            sitenin bazı işlevlerinin beklenen şekilde çalışmamasına neden olabilir.
           </p>
         </div>
       </Container>
