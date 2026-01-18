@@ -76,15 +76,18 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-5 text-sm font-semibold text-slate-500">Genel Merkez</div>
-              <div className="mt-2 text-2xl font-semibold text-ink-black">İstanbul / Türkiye</div>
+              <div className="mt-2 text-2xl font-semibold text-ink-black">Sarıyer / İstanbul</div>
+              <div className="mt-3 text-base font-medium text-slate-600">
+                Ahi Evran Cad. No:6, 42 Maslak, Ofis 3, Kat:1, No:1, 34485 Sarıyer/İstanbul
+              </div>
               <div className="mt-3 text-base font-medium text-slate-600">
                 Haritada görüntüleyerek yol tarifi alabilirsiniz.
               </div>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Istanbul"
+                href="https://www.google.com/maps/search/?api=1&query=Fark+Labs+TEKMER+Maslak"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center justify-center rounded-2xl bg-trust-blue px-6 py-3 text-base font-semibold text-white shadow-soft transition hover:bg-[#0047B3] hover:shadow-xl"
               >
                 Haritada Görüntüle
