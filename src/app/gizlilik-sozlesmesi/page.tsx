@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
 
           <p className="text-base leading-relaxed text-slate-700">
             PALINGA Yazılım A.Ş. olarak, Aphasia Reverbis kapsamında işlenen kişisel verilerin gizliliğine ve güvenliğine
-            önem veririz. Bu politika; platformu kullanan afazi hastaları, hasta yakınları ve uzman dil‑konuşma
+            önem veririz. Bu politika; platformu kullanan afazi danışanları, danışan yakınları ve uzman dil‑konuşma
             terapistleri için temel gizlilik prensiplerimizi açıklar.
           </p>
 
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
           <ul className="list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
             <li>Veriler, yalnızca platformun sunulması ve rehabilitasyon süreçlerinin yürütülmesi amacıyla kullanılır.</li>
             <li>Veriler, hiçbir şekilde reklam amaçlı üçüncü taraflara satılmaz.</li>
-            <li>Terapist‑hasta gizliliği esastır; yetkisiz erişimi önlemek için erişim kontrolleri uygulanır.</li>
+            <li>Terapist‑danışan gizliliği esastır; yetkisiz erişimi önlemek için erişim kontrolleri uygulanır.</li>
           </ul>
 
           <h2 className="mb-3 mt-6 text-xl font-semibold">Paylaşım ve üçüncü taraflar</h2>

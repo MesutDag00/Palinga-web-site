@@ -20,7 +20,7 @@ export function Header() {
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-ink-black">
           <img
-            src="/images/AphasiaReverbisLogo.jpeg"
+            src="/images/AphasiaReverbisLogo.png"
             alt="Aphasia Reverbis Logo"
             className="mr-4 h-10 w-auto object-contain sm:h-12"
           />

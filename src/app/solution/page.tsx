@@ -61,7 +61,7 @@ function TherapistDashboard() {
           <div className="rounded-2xl bg-white/70 p-4 ring-1 ring-white/70 lg:col-span-7">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
-                <div className="text-sm font-semibold text-ink-black">Hasta Gelişim Grafiği</div>
+                <div className="text-sm font-semibold text-ink-black">Danışan Gelişim Grafiği</div>
                 <div className="mt-1 text-xs font-semibold text-slate-500">Son 14 gün • Başarı skoru</div>
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
@@ -372,7 +372,7 @@ export default function SolutionPage() {
       <Container className="py-12 sm:py-16">
         <div className="max-w-2xl">
           <h1 className="text-balance text-4xl font-bold text-ink-black sm:text-5xl">
-            İkili Ekosistem: <span className="text-trust-blue">Hasta</span> + <span className="text-healing-teal">Terapist</span>
+            İkili Ekosistem: <span className="text-trust-blue">Danışan</span> + <span className="text-healing-teal">Terapist</span>
           </h1>
           <p className="mt-4 text-lg text-soft-gray">
             Evde sürdürülebilir rehabilitasyon ve uzaktan veri odaklı yönetim aynı platformda.
@@ -386,7 +386,7 @@ export default function SolutionPage() {
                 <h2 id="hasta-aile" className="text-2xl font-bold text-ink-black">
                   Kişiselleştirilmiş Ev Rehabilitasyonu
                 </h2>
-                <p className="mt-1 text-base text-soft-gray">Hasta ve Aile Paneli</p>
+                <p className="mt-1 text-base text-soft-gray">Danışan ve Aile Paneli</p>
               </div>
               <ButtonLink href="/contact" variant="secondary" className="hidden sm:inline-flex">
                 Başvuru & Bilgi
@@ -427,13 +427,13 @@ export default function SolutionPage() {
                 icon={<BarChart3Icon />}
               />
               <Feature
-                title="Uzaktan hasta takibi"
+                title="Uzaktan danışan takibi"
                 desc="Seans aralarında gelişimi izleyerek doğru zamanda müdahale etmeyi sağlar."
                 icon={<SearchIcon />}
               />
               <Feature
                 title="İş verimliliği artışı"
-                desc="Rutin takip yükünü azaltır; daha fazla hastaya kaliteli destek."
+                desc="Rutin takip yükünü azaltır; daha fazla danışana kaliteli destek."
                 icon={<TrendingUpIcon />}
               />
             </div>

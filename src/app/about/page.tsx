@@ -90,7 +90,7 @@ export default function AboutPage() {
                 <div className="text-sm font-semibold text-trust-blue">Manifesto</div>
                 <h2 className="mt-2 text-2xl font-bold text-ink-black">Misyonumuz</h2>
                 <p className="mt-3 text-[15px] font-medium leading-relaxed text-slate-600">
-                  Bilimsel temelli terapi yöntemlerini modern mobil teknolojilerle dijitalleştirerek; hastalar için motive edici, uzmanlar için ise ölçülebilir ve güvenilir bir uzaktan takip sistemi sunmak.
+                  Bilimsel temelli terapi yöntemlerini modern mobil teknolojilerle dijitalleştirerek; danışanlar için motive edici, uzmanlar için ise ölçülebilir ve güvenilir bir uzaktan takip sistemi sunmak.
                 </p>
               </div>
             </div>
